@@ -1,3 +1,3 @@
 # my-magic-prompt
 
-Hello World
+Hello World !
