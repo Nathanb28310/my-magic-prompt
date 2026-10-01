@@ -92,7 +92,7 @@ cmd() {
         echo "echec modification"
       fi;;
 
-    about) echo "foul tarnished, in search of the Elden Ring";;
+    about) echo "if saving you means losing you then so be it.";;
 
     smtp) 
       echo "Quel est le destinataire ?"
