@@ -1,5 +1,6 @@
 #!/bin/bash
 source ./quit.sh
+source ./joke.sh
 source ./.env
 
 verification() {
@@ -21,7 +22,9 @@ cmd() {
   case "${cmd}" in
     quit | exit ) quit;;
 
-    help ) echo "Commandes : help, ls, rm, rmd, rmdir, about, version, age, quit, profil, passw, cd, pwd, hour, httpget, smtp, open"  ;;
+    help ) echo "Commandes : help, ls, rm, rmd, rmdir, about, version, age, quit, profil, passw, cd, pwd, hour, httpget, smtp, open, joke"  ;;
+
+    joke ) joke ;;
 
     ls ) ls -lah;;
 
