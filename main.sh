@@ -1,6 +1,7 @@
 #!/bin/bash
 source ./quit.sh
 source ./joke.sh
+source ./calc.sh
 source ./.env
 
 verification() {
@@ -25,6 +26,8 @@ cmd() {
     help ) echo "Commandes : help, ls, rm, rmd, rmdir, about, version, age, quit, profil, passw, cd, pwd, hour, httpget, smtp, open, joke"  ;;
 
     joke ) joke ;;
+
+    calc ) calc;; 
 
     ls ) ls -lah;;
 
