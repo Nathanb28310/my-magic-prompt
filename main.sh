@@ -1,12 +1,13 @@
 #!/bin/bash
-source quit.sh
+source ./quit.sh
+source ./.env
 
 verification() {
   echo "Quel est votre identifiant ?"
   read id
   echo "Quel est votre mot de passe ?"
   read mdp
-  if [ $id != "Xzen" ] && [ $mdp = "12345" ]; then
+  if [ "$id" != "$LOGIN" ] && [ "$mdp" != "$MDP" ]; then
     exit
   else
     echo "accès autorisé"
@@ -39,7 +40,7 @@ cmd() {
     cd ) 
       echo "Dans quel dossier veux-tu aller ?"
       read dossier
-      cd "$dossier";;
+      cd "$dossier" || cd;;
 
     hour ) date +%H:%M:%S ;; 
 
@@ -79,6 +80,7 @@ cmd() {
       read mdp2
       verification
       if [ "$mdp1" -eq "$mdp2" ]; then
+        MDP="$mdp1"
         echo "modification du mdp"
       else
         echo "echec modification"
