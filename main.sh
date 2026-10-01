@@ -92,7 +92,7 @@ cmd() {
         echo "echec modification"
       fi;;
 
-    about) echo "Interprète des commandes en bash";;
+    about) echo "if saving you means losing you then so be it";;
 
     smtp) 
       echo "Quel est le destinataire ?"
